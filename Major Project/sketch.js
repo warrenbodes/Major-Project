@@ -37,6 +37,10 @@ let sWin1, sWin2, sWin3;
 let cLoss1, cLoss2, cLoss3, cLoss4, cLoss5, cLoss6;
 let cWin1, cWin2;
 
+//Counter system
+let turnCounterSpasky = 3;
+let turnCounterCharter = 5;
+
 function preload(){
   //Preload sounds(Text within the function by Jienan. The function already exists.)
 
