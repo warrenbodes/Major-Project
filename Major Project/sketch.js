@@ -397,11 +397,17 @@ function mousePressed() {
       grid[ycoord][xcoord] = 2;
       displayGrid();
       turnCounterSpasky = turnCounterSpasky();
+      if (turnCounterSpasky === 0) {
+        gameOver();
+      }
     } 
     else if (state === "Spasky" && grid[ycoord][xcoord] === 0){
       stopAllSounds();
       playSpaskyLossSound();
       turnCounterSpasky = turnCounterSpasky() - 1;
+      if (turnCounterSpasky === 0) {
+        gameOver();
+      }
     }
     else if (state === "Charter" && grid[ycoord][xcoord] === 1 ) {
       stopAllSounds();
@@ -409,11 +415,17 @@ function mousePressed() {
       grid[ycoord][xcoord] = 2;
       displayGrid();
       turnCounterCharter = turnCounterCharter();
+      if (turnCounterCharter === 0) {
+        gameOver();
+      }
     }
     else if (state === "Charter" && grid[ycoord][xcoord] === 0){
       stopAllSounds();
       playCharterLossSound();
       turnCounterCharter = turnCounterCharter() - 1;
+      if (turnCounterCharter === 0) {
+        gameOver();
+      }
     }
   }
 }
@@ -429,12 +441,10 @@ function keyPressed() {
 }
 
 function gameOver() {
-  if (state === "Spasky" && turnCounterSpasky === 0 || state === "Charter" && turnCounterCharter === 0) {
-    gridsDrawn = 0;
-    state = 2;
-    rectMode(CENTER);
-    textAlign(CENTER);
-    stopAllSounds(); 
-  }
+  gridsDrawn = 0;
+  state = 2;
+  rectMode(CENTER);
+  textAlign(CENTER);
+  stopAllSounds(); 
 }
 
