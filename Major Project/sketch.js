@@ -245,23 +245,29 @@ function placeEnemies(cols, rows){
 function playSpaskyLossSound(){
   //When no Blaviken is found in the Spasky mode(by Jienan)
   let choices = [1, 2, 3, 4, 5];
+  // eslint-disable-next-line no-undef
   choice = random(choices);
+  // eslint-disable-next-line no-undef
   if (choice === 1){
     sLoss1.setVolume(0.3);
     sLoss1.play();
   }
+  // eslint-disable-next-line no-undef
   else if (choice === 2){
     sLoss2.setVolume(0.3);
     sLoss2.play();
   }
+  // eslint-disable-next-line no-undef
   else if (choice === 3){
     sLoss3.setVolume(0.3);
     sLoss3.play();
   }
+  // eslint-disable-next-line no-undef
   else if (choice === 4){
     sLoss4.setVolume(0.3);
     sLoss4.play();
   }
+  // eslint-disable-next-line no-undef
   else if (choice === 5){
     sLoss5.setVolume(0.3);
     sLoss5.play();
@@ -271,27 +277,34 @@ function playSpaskyLossSound(){
 function playCharterLossSound(){
   //When no Blaviken is found in the Charter mode(by Jienan)
   let choices = [1,2,3,4,5,6];
+  // eslint-disable-next-line no-undef
   choice = random(choices);
+  // eslint-disable-next-line no-undef
   if (choice === 1){
     cLoss1.setVolume(0.3);
     cLoss1.play();
   }
+  // eslint-disable-next-line no-undef
   else if (choice === 2){
     cLoss2.setVolume(0.3);
     cLoss2.play();
   }
+  // eslint-disable-next-line no-undef
   else if (choice === 3){
     cLoss3.setVolume(0.3);
     cLoss3.play();
   }
+  // eslint-disable-next-line no-undef
   else if (choice === 4){
     cLoss4.setVolume(0.3);
     cLoss4.play();
   }
+  // eslint-disable-next-line no-undef
   else if (choice === 5){
     cLoss5.setVolume(0.3);
     cLoss5.play();
   }
+  // eslint-disable-next-line no-undef
   else if (choice === 6){
     cLoss6.setVolume(0.3);
     cLoss6.play();
@@ -301,15 +314,19 @@ function playCharterLossSound(){
 function playSpaskyWinSound(){
   //When Blaviken is found in the Spasky mode(by Jienan)
   let choices = [1, 2, 3];
+  // eslint-disable-next-line no-undef
   choice = random(choices);
+  // eslint-disable-next-line no-undef
   if (choice === 1){
     sWin1.setVolume(0.5);
     sWin1.play();
   }
+  // eslint-disable-next-line no-undef
   else if (choice === 2){
     sWin2.setVolume(0.5);
     sWin2.play();
   }
+  // eslint-disable-next-line no-undef
   else if (choice === 3){
     sWin3.setVolume(1.0);
     sWin3.play();
@@ -319,11 +336,14 @@ function playSpaskyWinSound(){
 function playCharterWinSound(){
   //When Blaviken is found in the Charter mode(by Jienan)
   let choices = [1, 2];
+  // eslint-disable-next-line no-undef
   choice = random(choices);
+  // eslint-disable-next-line no-undef
   if (choice === 1){
     cWin1.setVolume(1.0);
     cWin1.play();
   }
+  // eslint-disable-next-line no-undef
   else if (choice === 2){
     cWin2.setVolume(1.0);
     cWin2.play();
