@@ -396,20 +396,24 @@ function mousePressed() {
       playSpaskyWinSound();
       grid[ycoord][xcoord] = 2;
       displayGrid();
+      turnCounterSpasky = turnCounterSpasky();
     } 
     else if (state === "Spasky" && grid[ycoord][xcoord] === 0){
       stopAllSounds();
       playSpaskyLossSound();
+      turnCounterSpasky = turnCounterSpasky() - 1;
     }
     else if (state === "Charter" && grid[ycoord][xcoord] === 1 ) {
       stopAllSounds();
       playCharterWinSound();
       grid[ycoord][xcoord] = 2;
       displayGrid();
+      turnCounterCharter = turnCounterCharter();
     }
     else if (state === "Charter" && grid[ycoord][xcoord] === 0){
       stopAllSounds();
       playCharterLossSound();
+      turnCounterCharter = turnCounterCharter() - 1;
     }
   }
 }
@@ -421,6 +425,16 @@ function keyPressed() {
     rectMode(CENTER);
     textAlign(CENTER);
     stopAllSounds();      
+  }
+}
+
+function gameOver() {
+  if (state === "Spasky" && turnCounterSpasky === 0 || state === "Charter" && turnCounterCharter === 0) {
+    gridsDrawn = 0;
+    state = 2;
+    rectMode(CENTER);
+    textAlign(CENTER);
+    stopAllSounds(); 
   }
 }
 
