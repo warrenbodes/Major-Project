@@ -38,11 +38,10 @@ let cLoss1, cLoss2, cLoss3, cLoss4, cLoss5, cLoss6;
 let cWin1, cWin2;
 
 //Counter system
-let turnCounterSpasky = 3;
-let turnCounterCharter = 5;
+let turnCounterSpasky;
+let turnCounterCharter;
 
 function preload(){
-  //Preload sounds(Text within the function by Jienan. The function already exists.)
 
   //ensures audio compatibility
   soundFormats("wav","m4a");
@@ -106,6 +105,10 @@ function setup() {
   buttonHeight = (height / 2 - 10) / 2;
   size = (height / 2 - 10) / 4;
   gridsDrawn = 0;
+
+  //Counter values for charter and spasky mode
+  turnCounterSpasky = 3;
+  turnCounterCharter = 5;
 }
 
 function draw() {
