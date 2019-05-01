@@ -396,7 +396,7 @@ function mousePressed() {
       playSpaskyWinSound();
       grid[ycoord][xcoord] = 2;
       displayGrid();
-      turnCounterSpasky = turnCounterSpasky();
+      turnCounterSpasky = 3;
       if (turnCounterSpasky === 0) {
         gameOver();
       }
@@ -404,7 +404,7 @@ function mousePressed() {
     else if (state === "Spasky" && grid[ycoord][xcoord] === 0){
       stopAllSounds();
       playSpaskyLossSound();
-      turnCounterSpasky = turnCounterSpasky() - 1;
+      turnCounterSpasky = turnCounterSpasky - 1;
       if (turnCounterSpasky === 0) {
         gameOver();
       }
@@ -414,7 +414,7 @@ function mousePressed() {
       playCharterWinSound();
       grid[ycoord][xcoord] = 2;
       displayGrid();
-      turnCounterCharter = turnCounterCharter();
+      turnCounterCharter = 5;
       if (turnCounterCharter === 0) {
         gameOver();
       }
@@ -422,7 +422,7 @@ function mousePressed() {
     else if (state === "Charter" && grid[ycoord][xcoord] === 0){
       stopAllSounds();
       playCharterLossSound();
-      turnCounterCharter = turnCounterCharter() - 1;
+      turnCounterCharter = turnCounterCharter - 1;
       if (turnCounterCharter === 0) {
         gameOver();
       }
