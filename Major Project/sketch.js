@@ -40,6 +40,8 @@ let cWin1, cWin2;
 //Counter system
 let turnCounterSpasky;
 let turnCounterCharter;
+let turnTextSpasky = ["Turns left: " + turnCounterSpasky];
+let turnTextCharter = ["Turns left: " + turnCounterCharter];
 
 function preload(){
 
