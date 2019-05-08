@@ -37,7 +37,7 @@ let sWin1, sWin2, sWin3;
 let cLoss1, cLoss2, cLoss3, cLoss4, cLoss5, cLoss6;
 let cWin1, cWin2;
 
-//Counter system
+//Counter system (By Pouya)
 let turnCounterSpasky;
 let turnCounterCharter;
 let turnTextSpasky = ["Turns left: " + turnCounterSpasky];
@@ -108,7 +108,7 @@ function setup() {
   size = (height / 2 - 10) / 4;
   gridsDrawn = 0;
 
-  //Counter values for charter and spasky mode
+  //Counter values for charter and spasky mode (by Pouya)
   turnCounterSpasky = 3;
   turnCounterCharter = 5;
 }
