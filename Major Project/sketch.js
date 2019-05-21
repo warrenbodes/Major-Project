@@ -40,8 +40,6 @@ let cWin1, cWin2;
 //Counter system (By Pouya)
 let turnCounterSpasky;
 let turnCounterCharter;
-let turnTextSpasky = [turnCounterSpasky];
-let turnTextCharter = [turnCounterCharter];
 
 function preload(){
 
