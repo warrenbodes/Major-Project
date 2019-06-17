@@ -117,8 +117,11 @@ function draw() {
     loadStartScreen();
     writeInstructions();
   }
-  if (state === 2){
+  if (state === 2) {
     introductionMenu();
+  }
+  if (state === 3){
+    choosingDifficulty();
   }
   if (state === "Spasky"){
     gridSize = 3;
@@ -173,7 +176,15 @@ function clickedOnStartButton(){
     mouseY <= startButtonY + startButtonHeight / 2;
 }
 
-function introductionMenu(){
+function introductionMenu() {
+  background("beige");
+  fill("red");
+  textMode(CENTER);
+  text("Welcome to La Redmption \n There are two grids where Spasky is the easy mode and Charter is the hard mode \n In each column there is a Blaviken which you have to find in oder to succeed, however, be careful as you only have 3 turns in Spasky and 5 in Charter for each single Blaviken \n Once you find a Blaviken you will be challenged in two different was by either going to his lair or tagging him \n Which ever game you choose beware that the world will go on fire shall you fail");
+
+}
+
+function choosingDifficulty(){
   //Sets up the background and other settings for the menu page with two modes(by Pouya, edited by Jienan)
   textAlign(CENTER);
   background("black");
